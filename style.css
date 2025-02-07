@@ -91,3 +91,132 @@ body{
     margin: 10px;
     font-size: 600;
 }
+
+/* uma css */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #dfdbdbd9;
+    /* width: 100vw; */
+  }
+
+  .logo img{
+    /* background-color: green; */
+    width: 20%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  #logos .MuiStack-root{
+    /* background-color: green; */
+    color: #515151;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+
+  }
+  .full_container {
+    display: flex;
+    justify-content: flex-end;
+    
+    /* border: 5px solid black; */
+  }
+  .left_container{
+    width: 50%;
+    
+
+  }
+  .outer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* border: 8px solid black; */
+    height: 100vh;
+    width: 50%;
+  }
+
+  .heading {
+    /* border: 10px solid blue; */
+    padding: 50px;
+    width: 100%;
+  }
+  .outer_container h1{
+    margin-bottom: 50px;
+    padding: 10px;
+    color: #212121;
+    line-height: 0;
+    text-align: center;
+  }
+  .left_container{
+    align-content: center;
+    margin-left: 10px;
+  }
+  .left_container h1{
+    color: black;
+    font-weight: normal;
+    font-size: 25px;
+  }
+  .left_container > p{
+    color: #717171;
+    font-size: 15px;
+    padding: 5px;
+    line-height: 1.3;
+  }
+
+  .inputs_container > input {
+    /* background-color: pink; */
+    width: 100%;
+    height: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    padding: 15px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0.5px 0.5px 2px 1px grey;
+  }
+  label {
+    font-size: 12px;
+    /* background-color: pink;  */
+  }
+  .check{
+    margin: 10px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .button{
+    text-align: center;
+  }
+  button{
+    font-size: 15px;
+    padding: 8px 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  button:hover{
+    background-color: rgb(28, 27, 27);
+    color: #fff;
+    cursor: pointer;
+
+  }
+
+  h6{
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 10px;
+  }
+  .link_container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link_container h5{
+    font-weight: normal;
+  }
