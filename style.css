@@ -57,6 +57,8 @@ body {
 
        opacity: 60%;
 
+       padding-right: 34px;
+
        
        
 }
@@ -69,7 +71,7 @@ body {
   font-size: 2rem;
   line-height: 1.2; 
 
- padding-right: 235px;
+ padding-right: 266px;
  opacity: 85%;
  
    
@@ -85,6 +87,8 @@ body {
   unicode-bidi: isolate;
 
   opacity: 60%;
+
+  line-height: 1.5;
  
 } 
 
