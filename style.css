@@ -28,7 +28,7 @@ body {
    justify-content: center;
    align-items: center;
 
-   padding: 40px;
+   padding: 24px;
    text-align: start;
    /* background-color: #f4f4f4; */
 
@@ -57,11 +57,16 @@ body {
 
        /* color: var(--mui-palette-neutral-500); */
 
-       opacity: 60%;
-      color: rgb(102, 112, 133);
+       /* opacity: 60%; */
+
+      /* color: rgb(102, 112, 133); */
+
+      color: #667085;
        padding-right: 34px;
 
-       margin-inline-start: -55px;
+       margin-inline-start: -50px;
+
+       
 
        
        
@@ -71,8 +76,9 @@ body {
   margin: 0px;
   font-family:  "Inter", serif;
   font-weight: 500;
-  font-size: 2rem;
-  line-height: 1.2; 
+  font-size: 32px;
+  line-height: 38.4px;
+  height: 38.4px; 
 
  /* padding-right: 266px; */
  /* opacity: 85%; */
@@ -80,14 +86,17 @@ body {
  display: block;
  margin-block-start: 1.33em;
  /* margin-block-end: 1.33em; */
- margin-inline-start: -325px;
+ margin-inline-start: -330px;
  margin-inline-end: 0px;
  /* font-weight: bold; */
  unicode-bidi: isolate;
  
   color: #212636;
+
   /* padding-right: 275px; */
-  opacity: 85%;
+  /* opacity: 85%; */
+
+  
  
 }
 
@@ -101,12 +110,17 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
+  /* color: #667085; */
+  
   color: #667085;
-  opacity: 60%;
+
+  /* opacity: 60%; */
 
   line-height: 1.5;
 
-   margin-inline-start: -15px;
+   margin-inline-start: 0px;
+
+   
  
 } 
 
