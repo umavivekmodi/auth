@@ -5,13 +5,14 @@
   padding: 0; 
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  "Inter", serif;
 }
 
 body {
   background-color: #dfdbdbd9;
   /* width: 100vw; */
   height: 100vh;
+  font-family: "Inter", serif;
 }
 .full_container{
    display: flex;
@@ -20,9 +21,10 @@ body {
 }
 
 .left_container{
+  display: flex;
    flex-direction: column;
    width: 50%;
-   display: flex;
+
    justify-content: center;
    align-items: center;
 
@@ -56,7 +58,7 @@ body {
        /* color: var(--mui-palette-neutral-500); */
 
        opacity: 60%;
-
+      color: rgb(102, 112, 133);
        padding-right: 34px;
 
        margin-inline-start: -55px;
@@ -67,7 +69,7 @@ body {
 
 .left_container h4{
   margin: 0px;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:  "Inter", serif;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.2; 
@@ -83,6 +85,9 @@ body {
  /* font-weight: bold; */
  unicode-bidi: isolate;
  
+  color: #212636;
+  /* padding-right: 275px; */
+  opacity: 85%;
  
 }
 
@@ -96,7 +101,7 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
-
+  color: #667085;
   opacity: 60%;
 
   line-height: 1.5;
@@ -117,21 +122,7 @@ body {
   } */
  
 
-  .logo img{
-    display: block;
-    color: rgba(85, 26, 139);
-    cursor: pointer;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 0px;
-    font-weight: 400;
-    position: relative;
-    margin-top: 50px;
-    height: 32px;
-    width: 122px;
-    line-height: 0;
-    margin-left: -250px;
-
-  }
+  
 
   /* .full_container {
     display: flex;
@@ -185,37 +176,99 @@ body {
   .outer_container{
     box-shadow : 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
   }
-  .outer_container h1{
- display: block;
-margin-bottom: 100px ;
- text-align: center;
-font-size: 24px;
-font-weight: 500;
-line-height: 28.8px;
-margin-top: px;
-text-size-adjust: 100%;
-/* background-color: green; */
-  }
-  /* .left_container{
-    align-content: center;
-    margin-left: 10px;
-  }
-  .left_container h1{
-    color: black;
-    font-weight: normal;
-    font-size: 25px;
-  }
-  .left_container > p{
-    color: #717171;
-    font-size: 15px;
-    padding: 5px;
-    line-height: 1.3;
-  } */
 
+  .dash{
+    display: inline-flex;
+    margin-left: -380px;
+    font-weight: 500;
+    gap: 8px;
+    color: #212636;
+    align-items: center;
+    
+  }
+  .dash a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .dash:hover{
+    text-decoration: underline;
+  }
+
+  .logo img{
+    display: block;
+    color: rgba(85, 26, 139);
+    cursor: pointer;
+    font-family: "Inter", serif;
+    font-size: 0px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 20px;
+    height: 32px;
+    width: 122px;
+    line-height: 0;
+    margin-left: -232px;
+    margin-bottom: 20px;
+
+  }
+
+  .tnc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: -80px;
+  }
+  .outer_container h1{
+  display: block;
+  margin-bottom: 100px ;
+  /* text-align: center; */
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-size-adjust: 100%;
+  /* background-color: green; */
+  margin-left: -90px;
+  padding: 10px;
+  }
+  
+   label {
+    font-size: 16px;
+    font-weight: 0;
+    
+    
+  } 
+ 
+  
+
+ 
+   /* .inputs_container:focus-within{
+    color: #635bff;
+   } */
+
+  .label:focus-within label{
+    color: #635bff;
+  }
+  .label:focus-within input{
+    border: 2px solid #635bff !important;
+  
+  }
+  .label label{
+    margin-left:-80px
+  }
+ 
   .inputs_container{
     margin-top: -130px;
+    /* display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin: 0;
+    padding: 0; */
+   
+  
   }
-  .inputs_container > input {
+  .inputs_container > .label > input {
+   font-family: "Inter", serif;  ;
    align-items: center;
    align-self: stretch;
    padding: 10px;
@@ -227,58 +280,92 @@ text-size-adjust: 100%;
    outline: none;
    font-size: 16px;
    margin-bottom: 15px;
-   box-shadow: 0.75px 0.50px 0px 0px rgb(199, 198, 198);
+   box-shadow: 0.75px 0.50px 0px 0px rgb(228, 231, 234);
+   /* background-color: blue; */
    
 
   }
 
-  input:focus-within{
-    border: 2px solid #635bff;
-   
-    
-  }
-  label {
-    margin-left: -80px;
-    font-size: 16px;
-    font-weight: 0;
-    
-  }
+  
 
-  label:focus{
-    color: #635bff;
-  }
   .check{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    flex-direction: row-reverse;
+    
+
+
+  }
+  .check label{
     cursor: pointer;
-    padding: 5px;
-    font-size: 13.3333px;
-    width: 40;
-    height: 40;
-    z-index: 1;
-    margin-left: -80px;
-    font-size: 16px;
-    font-weight: 0;
- 
+    /* background-color: pink; */
+  
+    font-size: 0.875rem;
+  }
+  /* input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    border: 2px solid gray;
+    border-radius: 8px; 
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(214, 208, 208, 0.2);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+  } */
+  input[type="checkbox"] {
+    appearance: none; /* Removes default styles */
+    width: 24px;
+    height: 24px;
+    border: 2px solid gray;
+    border-radius: 5px; /* Rounded corners */
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1); /* Adds shadow */
+    transition: box-shadow 0.3s ease-in-out;
     
   }
+
+  .check input{
+  
+    display: inline;
+    font-size: 14px;
+    /* position: absolute; */
+   width: 24px;
+   font-stretch: 100%;
+   font-weight: 500;
+   text-size-adjust: 100% ; 
+   line-height: 0.1; 
+  
+  }
+  
+ 
   .button{
     text-align: center;
     
   }
   button{
-    font-size: 15px;
-    padding: 8px 16px;
-    border: 1px solid black;
+    font-family: "Inter", serif;
+
+    padding: 8px 16px; 
+    /* border: 1px solid black; */
+    outline: none;
     border-radius: 8px;
     width: 300px;
     height: 40px;
-    background-color: rgb(78, 54, 245);
+    background-color: rgb(89,73,250);
     background-color: linear-gradient(rgb(99, 91, 255) 0%, rgb(78, 54, 245) 100%);
-    /* background-image: linear-gradient(rgb(99, 91, 255) 0%, rgb(78, 54, 245) 100%); */
-    /* box-shadow :rgba(0, 0, 0, 0.08) 0px 1px 2px 0px, rgb(78, 54, 245) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.16) 0px 2px 0px 0px inset; */
+    background-image: linear-gradient(rgb(99, 91, 255) 0%, rgb(78, 54, 245) 100%); 
+    /* box-shadow :rgba(0, 0, 0, 0.08) 0px 1px 2px 0px,  rgb(78, 54, 245) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.16) 0px 2px 0px 0px inset; */
     box-sizing :border-box;
     font-size: 16px;
     color: #fff;
-    
+    overflow: hidden;
+    box-shadow: none;
     transition: background0.2s ease-in-out;
 
   }
@@ -286,16 +373,20 @@ text-size-adjust: 100%;
   button:hover{
     /* background-color: rgb(28, 27, 27); */
     color: #fff;
+    outline:none;
     cursor: pointer;
-    background: linear-gradient(rgb(99, 91, 255) 0%, rgb(78, 54, 245) 40%);
+    background: linear-gradient(rgb(99, 91, 255) 10%, rgb(78, 54, 245) 90%);
     -webkit-text-stroke: 0.10px #fff; /* Creates the text stroke */
-
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 2px 0px, rgb(78, 54, 245) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.16) 0px 2px 0px 0px inset; */
+    box-shadow: none;
   }
   .line_text{
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 1rem;
+    font-family: "Inter", serif;
+    font-weight: 400;
   
   }
   .line_text::before,
@@ -305,27 +396,24 @@ text-size-adjust: 100%;
     border-bottom: 2px solid #ccc;
     margin: 0 15px;
     }
-  /* h6{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 10px;
-  } */
+
   .link_container{
     display: flex;
     justify-content: space-between;
-    margin-left: -90px;
+    margin-left: -70px;
     font-size: 18px;
     font-weight: 0;
   }
 
-  .link_container h5{
+  .link_container p{
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 400;
+    font-family:"Inter", serif; 
+    /* background-color: green;  */
   }
 
   .link_container a{
     font-weight: normal;
-    font-size: 17px;
+    font-size: 1rem;
   }

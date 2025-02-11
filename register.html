@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Registration</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="full_container">
@@ -19,7 +22,12 @@
       </div>
 
       <div class="outer_container">
+
         <div class="heading">
+          <div class="dash">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" ><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+            <a href="#">Dashboard</a>
+          </div>
             <div class="logo">
             <img src="./assits/logo--dark.svg"  alt="logo">
         </div>
@@ -27,36 +35,48 @@
           <h1>Register</h1>
           <form>
             <div class="inputs_container">
+              <div class="label">
               <label for="name">Full name</label><br />
               <input type="text" value="" id="name" /><br />
-
+              </div>
+              <div class="label">
               <label for="email">Email address</label><br />
               <input type="email" value="" id="email" /><br />
-
-              <label for="u_name">username</label><br />
+            </div>
+            <div class="label">
+              <label for="u_name">Username</label><br />
               <input type="text" value="" id="u_name" /><br />
-
+            </div>
+            <div class="label">
               <label for="password">Password</label><br />
               <input type="password" value="" id="password" /><br />
-
+            </div>
+            <div class="label">
               <label for="rePassword">Confirm password</label><br />
               <input type="password" value="" id="rePassword" /><br />
-              <div class="check">
-                <input type="checkbox" id="check" value="AcceptT&C" checked />Accept
-                T&C<br />
-                
+            </div> 
+              <div class="tnc">
+                <input type="checkbox" id="check" value="AcceptT&C" checked />
+                &nbsp;&nbsp;
+                <label for="check">Accept T&C</label>
+             
               </div>
+
               <div class="button">
-                <button>submit</button>
+                <button>Submit</button>
               </div>
+              
               <div class="line_text">
-              <h6>or</h6>
-            </div>
-              <div class="link_container">
-                <h5>Already have an account?</h5>
-                <a href="#">Login</a>
-                </div>
+              <p>or</p>
               </div>
+             
+            <div class="link_container">
+                <p>Already have an account?</p>
+                <a href="#">Login</a>
+                
+            </div>
+              </div>
+            
             </div>
         </div>
         </form>
