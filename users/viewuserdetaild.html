@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View details</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #919191;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  .container h1 {
+    text-align: center;
+    color: #333;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    gap: 15px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(208, 206, 208);
+    font-weight: auto;
+    cursor: pointer;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  .container_input p >strong{
+    padding: 5px;
+    margin: 10px;
+    /* background-color: pink; */
+    line-height: 1.5;
+
+  }
+  .container_input p> span{
+    /* display: inline;
+    text-align: center;
+    background-color: green;
+     */
+  }
+
+
+
+  .btn button:hover{
+    background-color:#333;
+    color: #fff;
+   }
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>View jayant</h1>
+      <form action="">
+        <div class="container_input">
+        <p><strong>Name:</strong> <span>Jayant</span></p>
+        <p><strong>Email:</strong> <span>jayant@gmail.com</span></p>
+        <p><strong>Phone No.</strong> <span>9123343948</span></p>
+        <p><strong>Created at:</strong> <span>feb,12 2024</span></p>
+        <p><strong>Updated at:</strong> <span>2 min ago</span></p>
+
+          <div class="btn">
+            <button>Change</button>
+            <button>Edit</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
