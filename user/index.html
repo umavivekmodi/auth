@@ -10,18 +10,18 @@
 
     <div class="table-container">
 
-        <caption> <h1>Users</h1></caption>
+        <caption> <h1>Users Table</h1></caption>
 
     <table border="1px solid black" >
         <thead>
             <div class="search-container">
-            <input class="thead"type="search" name="search" id="search" placeholder="search" style="width: 150px; height: 20px; font-weight: bolder;" />
-            <button class="thead" type="button" style="width: 102px; height: 20px; font-weight: bolder;"><a href="../users/add_users.html">Add</a></button>
+            <input type="search" name="search" id="search" placeholder="search"/>
+            <button type="button"><a href="../users/add_users.html">Add User</a></button>
             </div>
         </thead>
 
-        <tbody>
-           <tr style="height: 30px;">
+        <tbody >
+           <tr class="tbody">
             <th>S./No.</th>
             <th>Name</th>
             <th>Email</th>
@@ -31,14 +31,14 @@
             <th>Actions</th>
            </tr>
 
-           <tr>
-            <td>1</td>
+           <tr class="t-data">
+            <td><b>1</b></td>
             <td>Akash</td>
             <td>akash@gmail.com</td>
             <td>9109871953</td>
             <td>feb 12,2024 11:34Am</td>
             <td>2mins ago</td>
-            <td>
+            <td class="anchor">
                 <a href="../users/EditUser.html">Edit/</a>
                 <a href="../users/viewuserdetaild.html">View/</a>
                 <a href="../users/changepass.html">Change Pass/</a>
@@ -46,8 +46,8 @@
             </td>
            </tr>
 
-           <tr>
-            <td>2</td>
+           <tr class="t-data">
+            <td><b>2</b></td>
             <td>Uma</td>
             <td>uma@gmail.com</td>
             <td>7014117265</td>
@@ -61,8 +61,8 @@
             </td>
             </tr>
 
-            <tr>
-                <td>3</td>
+            <tr class="t-data">
+                <td><b>3</b></td>
                 <td>Yash</td>
                 <td>yash@gmail.com</td>
                 <td>7297919745</td>
@@ -76,8 +76,8 @@
                 </td>
                 </tr>
 
-                <tr>
-                    <td>4</td>
+                <tr class="t-data">
+                    <td><b>4</b></td>
                     <td>Kushagra</td>
                     <td>kushagra@gmail.com</td>
                     <td>9602311521</td>
@@ -91,8 +91,8 @@
                     </td>
                     </tr>
 
-                    <tr>
-                        <td>5</td>
+                    <tr class="t-data">
+                        <td><b>5</b></td>
                         <td>Jitesh</td>
                         <td>jitesh@gmail.com</td>
                         <td>7878093431</td>
@@ -108,12 +108,27 @@
         </tbody>
 
         <tfoot>
-        <tr>
-            <td colspan="7" style="text-align: end; height: 30px;">
-            <button style="padding: 3px; width: 70px;" type="button">Prev</button>
-            <button style="padding: 3px; width: 70px; margin-right: 5px;"  type="button">Next</button>
-           </td>
+            <tr>
+            <td colspan="7">
+                <div class="pagination">
+                    <button type="button" class="btn">Previous</button>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>...</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                    </ul>
+                    <button type="button" class="btn">Next</button>
+                </div>
+            </td>
         </tr>
+
+           
         </tfoot>
     </table>
 </div>
