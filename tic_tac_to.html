@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game tic-tac-to</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 600px;
+        margin-right: 600px;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        width: 300px;
+      }
+      .form > input {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 200px;
+      }
+      .tac {
+        border: 1px solid black;
+        padding: 50px;
+      }
+      .btn {
+        display: flex;
+        gap: 80px;
+        margin-top: 10px;
+        margin-left: 200px;
+        height: 50px;
+      }
+
+      .btn button {
+        width: 100px;
+        border-radius: 8px;
+      }
+      /* .btn #btn1{
+           background-color: pink;
+           border-radius: 5px;
+           width: 100px;
+           height: 50px;
+           margin-top: 5px;
+              
+        }
+
+        .btn #btn2{
+           background-color: pink;
+           border-radius: 5px;
+           width: 100px;
+           height: 50px;
+           margin-top: 5px;
+           
+        } */
+    </style>
+    <script>
+      // function clickX(){
+      //     document.getElementsByClassName('tac')[0].style.backgroundColor = "red";
+      //     document.getElementsByClassName('tac')[0].innerText="X";
+      //     document.addEventListener("click" , clickX()).innerText="X";
+
+      // }
+      // function clickO(){
+      //     let value = document.getElementsByClassName('tac');
+      //     for(i=0 ; i <= 9 ; i++){
+      //         value[i].style.backgroundColor = 'blue';
+      //         console.log(i);
+
+      //     }
+      //     // else{
+      //     //     backgroundColor ="red";
+      //     // }
+      // }
+
+      function clickX(){
+          let a = document.getElementById('number').value;
+          // console.log(a);
+              // document.getElementById('box'+a).style.backgroundColor = "red";
+          let b=document.getElementById('box'+a).innerText;
+                  // console.log(b);
+          if(b=="X" ===true || b =="O"){
+              console.log(alert("selected"));
+          }
+          else{
+              document.getElementById('box'+a).style.backgroundColor = "red";
+              document.getElementById('box'+a).innerText = "X";
+          }
+
+      }
+
+      function clickO(){
+          let c = document.getElementById('number')
+          .value;
+          console.log(c);
+
+          //  document.getElementById('box'+c).style.backgroundColor ="blue";
+          let d =  document.getElementById('box'+c).innerText;
+          // console.log(d == "O");
+          if(d =="O" ===true || d =="X"){
+              console.log(alert("selected"));
+
+          }else{
+              document.getElementById('box'+c).style.backgroundColor ="blue";
+              document.getElementById('box'+c).innerText = "O";
+          }
+      }
+
+    //   function chance(){
+    //       let uv = document.getElementById("number").value;
+    //       console.log(uv);
+    //    let a =document.getElementById('box'+ uv).innerText;
+
+    //       if(a=="X" === false || uv == "O" ){
+    //           document.getElementById("box"+uv).style.backgroundColor="green";
+    //           document.getElementById("box"+uv).innerText = "X";
+
+    //       }else if(a=="O" ===false || uv =="O"){
+
+    //           document.getElementById("box"+uv).style.backgroundColor = "yellow";
+    //           document.getElementById("box"+uv).innerText = "O";
+    //           alert(" next chance")
+    //       }else{
+    //           alert("already selected")
+    //       }
+    //     }
+
+      // else if( um === "O"){
+      //     document.getElementById("box"+uv).style.backgroundColor = "yellow";
+      //     document.getElementById("box"+uv).innerText = "O";
+      // }
+
+      // if( um === "X"  || uv=="O"){
+      //     // console.log(alert("selected"));
+      //     document.getElementById('box'+uv).style.backgroundColor = "brown";
+      // }
+      // else{
+      //     document.getElementById('box'+ uv).style.backgroundColor =="yellow";
+      // }
+      // }
+    </script>
+  </head>
+  <body>
+    <div class="tictac-toe">
+      <!-- <h1 id="h">turn player : O</h1> -->
+      <div class="game">
+        <div class="tac" id="box1">1</div>
+        <div class="tac" id="box2">2</div>
+        <div class="tac" id="box3">3</div>
+      </div>
+      <div class="game">
+        <div class="tac" id="box4">4</div>
+        <div class="tac" id="box5">5</div>
+        <div class="tac" id="box6">6</div>
+      </div>
+      <div class="game">
+        <div class="tac" id="box7">7</div>
+        <div class="tac" id="box8">8</div>
+        <div class="tac" id="box9">9</div>
+      </div>
+
+      <div class="form">
+        <label for="number"></label>
+        <input
+          type="number"
+          id="number"
+          value="enter the number"
+          placeholder="Enter box number"
+          min="1"
+          max="9"
+          required
+        /><br />
+        <!-- <input type="text" value="X" id="done" /> -->
+
+        <div class="btn">
+          <button onclick="clickX()">X</button>
+          <button onclick="clickO()">O</button>
+          <!-- <button onclick="chance()">submit</button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+
+    // function chance(){
+    //     let a = document.getElementById("number").value;
+    //     console.log(a);
+    //     // let b = document.getElementById("box"+a).innerText = "X"
+    //     let b = document.getElementById("done").value;
+    //     console.log(b);
+
+    //     let box =  document.getElementById("box"+a);
+    //     console.log(box+a);
+
+        // let error = document.getElementById("h");
+        // if(box.innerText === "X"){
+        //     error = "O";
+        // }else{
+        //     error = "X";
+        // }
+
+
+
+//         if(box.innerText === "O" || box.innerText ==="X"){
+//             alert("already selected");
+//             return;
+//         }
+//         if(b === "false" || b === "X"){
+//             document.getElementById("box"+a).style.backgroundColor = "yellow";
+//             document.getElementById("box"+a).innerText = "O";
+//             document.getElementById("done").value = "O";
+//         }
+//         else if(b === "false" || b === "O") {
+//             document.getElementById('box'+a).innerText ="X";
+//             document.getElementById("box"+a).style.backgroundColor = "green";
+//             document.getElementById("done").value = "X";
+
+//         }
+
+//     }
+//   </script>
+</html>
